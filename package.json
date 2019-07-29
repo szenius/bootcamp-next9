@@ -4,10 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "npm install",
+        "start": "npm install && next build src && next start src",
         "test": "jest",
         "dev": "next dev src",
-        "prod": "next build src && next start src"
     },
     "author": "",
     "license": "ISC",
