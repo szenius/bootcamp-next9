@@ -1,0 +1,24 @@
+{
+  "name": "next-9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^9.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.23",
+    "@zeit/next-sass": "^1.0.1",
+    "node-sass": "^4.12.0",
+    "path": "^0.12.7",
+    "typescript": "^3.5.3"
+  }
+}

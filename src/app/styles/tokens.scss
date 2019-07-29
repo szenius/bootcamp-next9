@@ -1,0 +1,92 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    > *:not(:last-child) {
+        margin-right: 16px;
+    }
+}
+
+.margin-top-0,
+.mt0 {
+    margin-top: 0;
+}
+
+.margin-top-4,
+.mt4 {
+    margin-top: 4px;
+}
+
+.margin-top-8,
+.mt8 {
+    margin-top: 8px;
+}
+
+.margin-top-12,
+.mt12 {
+    margin-top: 12px;
+}
+
+.margin-top-16,
+.mt16 {
+    margin-top: 16px;
+}
+
+.margin-top-24,
+.mt24 {
+    margin-top: 24px;
+}
+
+.margin-top-32,
+.mt32 {
+    margin-top: 32px;
+}
+
+.margin-top-40,
+.mt40 {
+    margin-top: 40px;
+}
+
+.margin-top-48,
+.mt48 {
+    margin-top: 48px;
+}
+
+.margin-top-52,
+.mt52 {
+    margin-top: 52px;
+}
+
+.margin-top-56,
+.mt56 {
+    margin-top: 56px;
+}
+
+.margin-top-64,
+.mt64 {
+    margin-top: 64px;
+}
+
+.margin-top-80,
+.mt80 {
+    margin-top: 80px;
+}
+
+.margin-top-104,
+.mt104 {
+    margin-top: 104px;
+}
+
+.paragraph-no-margin {
+    margin: 0;
+}
+
+.margin-bottom-0,
+.mb0 {
+    margin-bottom: 0;
+}
+
+.padding-bottom-8,
+.pb8 {
+    padding-bottom: 8px;
+}

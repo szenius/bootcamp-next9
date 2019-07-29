@@ -1,0 +1,12 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.link {
+    @include font-body;
+    @include focus-box;
+    @include hover-transparent;
+    font-weight: 600;
+    color: $color-primary;
+    text-decoration: underline;
+    cursor: pointer;
+}

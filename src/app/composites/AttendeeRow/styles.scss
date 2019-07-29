@@ -1,0 +1,16 @@
+@import 'variables';
+
+.row-attendee {
+    margin-top: 24px;
+
+    &-icon {
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+        background: $color-grey-light;
+    }
+
+    &-title {
+        font-weight: 600;
+    }
+}
