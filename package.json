@@ -3,6 +3,12 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
+    "author": "",
+    "license": "ISC",
+    "engines": {
+        "node": "10.3.0",
+        "npm": "6.4.1"
+    },
     "scripts": {
         "test": "jest",
         "dev": "next dev src",
@@ -11,8 +17,6 @@
         "prod": "npm run build && next start src",
         "postinstall": "npm run build"
     },
-    "author": "",
-    "license": "ISC",
     "dependencies": {
         "next": "^9.0.1",
         "react": "^16.8.6",
@@ -35,9 +39,5 @@
         "path": "^0.12.7",
         "ts-jest": "^24.0.2",
         "typescript": "^3.5.3"
-    },
-    "engines": {
-        "node": "10.3.0",
-        "npm": "6.4.1"
     }
 }
