@@ -6,8 +6,10 @@
     "scripts": {
         "test": "jest",
         "dev": "next dev src",
-        "postinstall": "next build src",
-        "start": "next start src"
+        "build": "next build src",
+        "start": "next start src",
+        "prod": "npm run build && npm run start",
+        "postinstall": "npm run build"
     },
     "author": "",
     "license": "ISC",
