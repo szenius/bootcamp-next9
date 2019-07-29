@@ -1,36 +1,37 @@
 {
-  "name": "next-9",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "dev": "next dev src",
-    "prod": "next build src && next start src"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "next": "^9.0.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  },
-  "devDependencies": {
-    "@types/enzyme": "^3.10.3",
-    "@types/enzyme-adapter-react-16": "^1.0.5",
-    "@types/jest": "^24.0.15",
-    "@types/react": "^16.8.23",
-    "@zeit/next-sass": "^1.0.1",
-    "babel-core": "^6.26.3",
-    "babel-jest": "^24.8.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
-    "jest": "^24.8.0",
-    "node-sass": "^4.12.0",
-    "path": "^0.12.7",
-    "ts-jest": "^24.0.2",
-    "typescript": "^3.5.3"
-  }
+    "name": "next-9",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "next build src",
+        "test": "jest",
+        "dev": "next dev src",
+        "prod": "next build src && next start src"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "next": "^9.0.1",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6"
+    },
+    "devDependencies": {
+        "@types/enzyme": "^3.10.3",
+        "@types/enzyme-adapter-react-16": "^1.0.5",
+        "@types/jest": "^24.0.15",
+        "@types/react": "^16.8.23",
+        "@zeit/next-sass": "^1.0.1",
+        "babel-core": "^6.26.3",
+        "babel-jest": "^24.8.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "enzyme": "^3.10.0",
+        "enzyme-adapter-react-16": "^1.14.0",
+        "jest": "^24.8.0",
+        "node-sass": "^4.12.0",
+        "path": "^0.12.7",
+        "ts-jest": "^24.0.2",
+        "typescript": "^3.5.3"
+    }
 }
