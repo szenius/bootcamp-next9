@@ -6,7 +6,7 @@
     "scripts": {
         "start": "npm install && next build src && next start src",
         "test": "jest",
-        "dev": "next dev src",
+        "dev": "next dev src"
     },
     "author": "",
     "license": "ISC",
