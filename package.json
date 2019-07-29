@@ -16,6 +16,10 @@
         "react": "^16.8.6",
         "react-dom": "^16.8.6"
     },
+    "engines": {
+        "node": "10.3.0",
+        "npm": "6.4.1"
+    },
     "devDependencies": {
         "@types/enzyme": "^3.10.3",
         "@types/enzyme-adapter-react-16": "^1.0.5",
