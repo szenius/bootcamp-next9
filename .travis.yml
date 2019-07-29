@@ -1,0 +1,21 @@
+language: node_js
+
+node_js: 
+  - 10.13.0
+
+cache: npm
+
+install:
+  - npm install
+
+script:
+  - npm test
+
+deploy:
+  provider: heroku
+  skip-cleanup: true
+  api_key: 
+      secure: $HEROKU_API_KEY
+  app: sample-deploy-1
+  on:
+    branch: master
