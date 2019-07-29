@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "next build src",
+        "start": "npm install",
         "test": "jest",
         "dev": "next dev src",
         "prod": "next build src && next start src"
