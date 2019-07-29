@@ -5,7 +5,7 @@ module.exports = withSass({
     sassLoaderOptions: {
         includePaths: [path.resolve(__dirname, './app/styles')]
     },
-    webpack: (config, options) => {
+    webpack: (config) => {
         config.resolve.alias['app'] = path.join(__dirname, 'app')
         return config;
     }

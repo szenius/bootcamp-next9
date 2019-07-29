@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "next dev src"
+    "dev": "next dev src",
+    "prod": "next build src && next start src"
   },
   "author": "",
   "license": "ISC",

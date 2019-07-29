@@ -14,8 +14,9 @@ script:
 deploy:
   provider: heroku
   skip-cleanup: true
+  app: sample-deploy-1
   api_key: 
       secure: $HEROKU_API_KEY
-  app: sample-deploy-1
   on:
     branch: master
+  run: "npm run prod"
