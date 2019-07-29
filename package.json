@@ -4,10 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "next start src",
-        "postinstall": "next build src",
         "test": "jest",
-        "dev": "next dev src"
+        "dev": "next dev src",
+        "postinstall": "next build src",
+        "start": "next start src"
     },
     "author": "",
     "license": "ISC",
