@@ -1,10 +1,10 @@
 import 'reflect-metadata';
-import { config } from 'dotenv';
+// import { config } from 'dotenv';
 import { createConnection } from 'typeorm';
 
 import { User } from './models/user/entity';
 
-config();
+// config();
 
 const connectDB = createConnection({
     type: 'mysql',
