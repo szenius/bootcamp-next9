@@ -11,15 +11,18 @@ const AttendancePage = (): JSX.Element => {
 
     const [newAttendee, setNewAttendee] = useState('');
     const [attendeeList, setAttendeeList] = useState([]);
+    const [submitting, setSubmitting] = useState(false);
 
     useEffect(() => void loadAttendees(), []);
 
     const addAttendee = async (): Promise<void> => {
+        await setSubmitting(true);
         if (newAttendee) {
             await addUser(newAttendee);
             await setNewAttendee('');
             await loadAttendees();
         }
+        await setSubmitting(false);
     }
 
     const loadAttendees = async (): Promise<void> => {
@@ -39,7 +42,7 @@ const AttendancePage = (): JSX.Element => {
             </p>
             <div className='row margin-top-40'>
                 <Input placeholder='Attendee name' value={newAttendee} onTextChange={setNewAttendee} />
-                <Button title='Add' onClick={addAttendee} />
+                <Button title='Add' onClick={addAttendee} loading={submitting} />
             </div>
             <div className='margin-top-48' />
             {attendeeList.map(attendee => <AttendeeRow name={attendee.name} />)}

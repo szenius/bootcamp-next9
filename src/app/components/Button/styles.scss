@@ -18,4 +18,9 @@
     border: 3px solid $color-primary;
     background: $color-primary;
     color: $color-white;
+
+    &.loading {
+        cursor: progress;
+        opacity: 0.3;
+    }
 }
