@@ -8,12 +8,12 @@ module.exports = {
       "^.+\\.tsx?$": "ts-jest"
     },
     testMatch: [
-      "**/*test.(ts|tsx)"
+      "**/test.(ts|tsx)"
     ],
     globals: {
       "ts-jest": {
         babelConfig: true,
-        tsConfig: "jest.tsconfig.json"
+        tsConfig: "<rootDir>/jest.tsconfig.json"
       }
     },
     coveragePathIgnorePatterns: [

@@ -1,5 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
+import { listUser } from 'server/models/user';
 
-export default (req: NextApiRequest, res: NextApiResponse) => {
-    res.json(['user1', 'user2']);
+export default async (req: NextApiRequest, res: NextApiResponse) => {
+    const allUsers = await listUser();
+    res.json(allUsers);
 }
