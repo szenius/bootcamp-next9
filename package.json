@@ -12,14 +12,14 @@
     "scripts": {
         "test": "jest",
         "dev": "next dev src",
-        "build": "next build src",
+        "postinstall": "next build src",
         "start": "next start src -p $PORT",
-        "prod": "npm run build && next start src",
-        "postinstall": "npm run build",
-        "db": "sh setup-db.sh"
+        "prod": "next build src && next start src",
+        "db:local": "sh setup-db.sh"
     },
     "dependencies": {
         "@zeit/next-sass": "^1.0.1",
+        "axios": "^0.19.0",
         "next": "^9.0.1",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
