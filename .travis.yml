@@ -10,10 +10,20 @@ script:
   - npm test
 
 deploy:
-  provider: heroku
-  skip-cleanup: true
-  app: sample-deploy-1
-  api_key: 
-      secure: $HEROKU_API_KEY
-  on:
-    branch: master
+  provider: elasticbeanstalk
+  access_key_id:
+    secure: $AWS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET
+  region: "ap-southeast-1"
+  app: "sample-deploy"
+  env: "SampleDeploy-env"
+
+# deploy:
+#   provider: heroku
+#   skip-cleanup: true
+#   app: sample-deploy-1
+#   api_key: 
+#       secure: $HEROKU_API_KEY
+#   on:
+#     branch: master
