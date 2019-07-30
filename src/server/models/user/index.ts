@@ -2,8 +2,7 @@ import { User, IUser } from './entity';
 import connectDB from 'server/db';
 
 export const addUser = async (name: string): Promise<IUser> => {
-    const connection = await connectDB;
-    console.log('##########################################', process.env.DB_HOST);
+    const connection = await connectDB();
     const users = connection.getRepository(User);
     const newUser = new User();
     newUser.name = name;
@@ -12,8 +11,7 @@ export const addUser = async (name: string): Promise<IUser> => {
 }
 
 export const listUser = async (): Promise<IUser[]> => {
-    const connection = await connectDB;
-    console.log('##########################################', process.env.DB_HOST);
+    const connection = await connectDB();
     const users = connection.getRepository(User);
     const userList = await users.find();
     return userList;
