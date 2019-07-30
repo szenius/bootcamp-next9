@@ -18,6 +18,7 @@ deploy:
   region: "ap-southeast-1"
   app: "sample-deploy"
   env: "SampleDeploy-env"
+  bucket_name: "sample-deploy"
 
 # deploy:
 #   provider: heroku
