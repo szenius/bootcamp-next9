@@ -6,6 +6,8 @@ import { User } from './models/user/entity';
 
 config();
 
+console.log('##########################################', process.env.DB_HOST);
+
 const connectDB = createConnection({
     type: 'mysql',
     host: process.env.DB_HOST,
