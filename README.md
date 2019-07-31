@@ -9,7 +9,11 @@
 
 <br>
 
-###  1. Setup
+###  1. Environment #1 [Local]
+
+Your **first** step in deployment is to have a `local instance` of your application running on your `local machine`. This is our primary working environment as developers to write features into our application and see them physically. Ideally, we will need to run our web application connected via a `locally initiated database`.
+
+<br>
 
 Create an `.env` file in `root` folder with the following properties:
 
@@ -33,7 +37,7 @@ Finally, run this command to create a local dockerized version of MySQL in your 
 npm run db:local
 ```
 
-### 2a. Running a production version locally
+### 1a. Running a production version locally
 
 To get the *feel* of how your application behaves in production, you can run this command to spin up the application locally with production settings 
 ```
@@ -42,7 +46,7 @@ npm run prod
 `Tip`: to utilise the DB, you have to run `npm run db:local` with the correct `.env` keys in the previous step 
 <br>
 
-### 2b. Running tests
+### 1b. Running tests
 
 To illustrate the point of deploying untested code to an environment, we will not use the default `npm test` command, but instead:
 ```
@@ -50,7 +54,12 @@ npm run unit:test
 ```
 <br>
 
-### 3. Making your application compatible with Heroku
+### 2. Environment #2 [Heroku] 
+
+<br>
+
+#### Making your application compatible with Heroku 
+
 
 By default, Heroku already has the node engine to run **nodejs** applications. What we need is a Heroku-ready Cloud Database for our application: `JawsDB`
 
