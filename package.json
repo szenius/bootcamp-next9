@@ -10,11 +10,10 @@
         "npm": "6.4.1"
     },
     "scripts": {
-        "test": "jest",
-        "dev": "next dev src",
         "postinstall": "next build src",
         "start": "next start src -p $PORT",
         "prod": "next build src && next start src",
+        "unit:test": "jest",
         "db:local": "sh setup-db.sh"
     },
     "dependencies": {
