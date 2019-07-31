@@ -6,6 +6,7 @@
 3) Have a `Github` account
 4) Have a `TravisCI` account
 5) Have a `Heroku` account
+   - **Note:** To use an add-on `Database` in Heroku, your account is required to be verified via `Billing Information` (You can skip this part)
 
 <br>
 
@@ -31,7 +32,7 @@ Install the required dependencies for this web app by running:
 npm install
 ```
 
-Finally, run this command to create a local dockerized version of MySQL in your machine:
+Finally, run this command to create a local dockerised version of MySQL in your machine:
 
 ```
 npm run db:local
@@ -62,6 +63,12 @@ npm run unit:test
 
 
 By default, Heroku already has the node engine to run **nodejs** applications. What we need is a Heroku-ready Cloud Database for our application: `JawsDB`
+
+**Note:**
+```
+To use this add-on Database in Heroku, your account is required to be verified 
+via Billing Information (You can skip this whole section!)
+```
 
 Download the add-on `JawsDB` from Heroku and fill in its credentials in:
 
