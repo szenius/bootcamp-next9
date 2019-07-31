@@ -8,7 +8,6 @@
 5) Have a `Heroku` account
 
 <br>
-<br>
 
 ###  1. Setup
 
