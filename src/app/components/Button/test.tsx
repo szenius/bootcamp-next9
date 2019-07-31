@@ -14,6 +14,6 @@ describe('<Button />', () => {
         const mockAction = jest.fn()
         const component = shallow(<Button title='Add' onClick={mockAction} loading={true} />);
         expect(component.type()).toBe('button');
-        expect(component.prop('className')).toContain('button-loading');
+        expect(component.prop('className')).toContain('button loading');
     })
 });
