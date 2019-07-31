@@ -1,5 +1,13 @@
 # Deploying a Web Application + DB
 
+#### Prerequisite for this workshop
+1) Have `Docker` installed on your machine
+2) Have `node` and `npm` installed on your machine
+3) Have a `Github` account
+4) Have a `TravisCI` account
+5) Have a `Heroku` account
+
+<br>
 <br>
 
 ###  1. Setup
