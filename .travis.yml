@@ -1,4 +1,19 @@
-language: node_js
+ language: node_js
 
-node_js:
-  - 8.16.0
+node_js: 
+  - 10.13.0
+
+install:
+  - npm install
+
+script:
+  - npm run unit:test
+
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  app: sample-deployment-tap # app name on heroku
+  api_key: # to authenticate to heroku
+    secure: $HEROKU_API_KEY # can name it whatever you want. secure is to blank out api key in travis logs.
+  on:
+    branch: master
